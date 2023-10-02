@@ -13,3 +13,5 @@ We can also use `inline code.`
 
 [Link to nowhere](http://a.com)
 
+![Image](http://url/a.png)
+
