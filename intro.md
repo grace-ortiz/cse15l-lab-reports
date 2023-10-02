@@ -10,3 +10,6 @@ I'm an aspiring web developer studying **Cognitive Science** w/ a specialization
   2) more list items!
 ```
 We can also use `inline code.`
+
+[Link to nowhere](http://a.com)
+
