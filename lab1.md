@@ -19,7 +19,9 @@ For the command `cd`:
   bash: cd: Hello.java: Not a directory
   ```
   With a file as an argument, `cd` gives the output that the given file is not a directory, and therefore the change directory command will not change to it. The output is not an error.
-
+\
+\
+\
 For the command `ls`:
 * With *no* arguments:
   ```
@@ -39,22 +41,25 @@ For the command `ls`:
   de.txt
   ```
   With a file as an argument, `ls` lists the specified file or file path. This is not an error. 
-
+\
+\
+\
 For the command `cat`:
 * With *no* arguments:
   ```
   [user@sahara ~/lecture1/messages]$ cat
 
   ```
-  With no arguments, `cat` returns no output and does not return to a new line.
+  With no arguments, `cat` waits for user input and will print your input below. This is not an error.
 * With a path to a *directory* as an argument:
   ```
   [user@sahara ~/lecture1]$ cat messages
   cat: messages: Is a directory
   ```
-  With a directory as an argument, `cat` 
+  With a directory as an argument, `cat` outputs that the given directory is, in fact, a directory and there are no file contents to print. The output is not an error. 
 * With a path to a *file* as an argument:
     ```
     [user@sahara ~/lecture1/messages]$ cat en-us.txt
     Hello World!
     ```
+    With a file as an argument, `cat` outputs the contents of the given file. This is not an error.
