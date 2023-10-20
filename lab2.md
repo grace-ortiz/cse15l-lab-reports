@@ -1,6 +1,6 @@
 # Lab 2 #
 ### Grace Ortiz ###
-
+## Part 1 ##
 ```
 import java.io.IOException;
 import java.net.URI;
