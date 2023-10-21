@@ -55,3 +55,9 @@ class StringServer {
     }
 }
 ```
+Here is me using add-message a few times with the example searches:
+![First Search](searches1.png)
+* 
+
+And here is a couple more searches I made after clearing the search list:
+![Second Search](searches2.png)
