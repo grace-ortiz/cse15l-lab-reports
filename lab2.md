@@ -57,7 +57,7 @@ class StringServer {
 ```
 Here is me using add-message a few times with the example searches:
 ![First Search](searches1.png)
-* 
+* First the main method of the StringServer class is called, which calls the Handler class, running the initialization of serachList and count and then the handleRequest method. The relevant argument for the main method of StringServer is the port number. The relevant argument for the handleRequest method is the url of the site/server. Upon inititalization, the value of searchList is and empty string, the value of count is 0, and message has not been initilaized yet. After adding the   
 
 And here is a couple more searches I made after clearing the search list:
 ![Second Search](searches2.png)
