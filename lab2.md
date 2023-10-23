@@ -68,3 +68,9 @@ And here is a couple more searches I made after clearing the search list:
 * When the path is changed to /clear, the value of URI is changed to https://0-0-0-0-3000-5qvda9t3k70pqq30rph2i4uo8o.us.edusercontent.com/clear, the value of searchList is changed back to an empty string, and the value of count is changed to 1. After adding the first search query, the message is changed to "I have now cleared the list", the searchList value is changed to "1. I have now cleared the list\n", and the value of count increments by one and changes to 2. Then the query is changed to "?s=This is a new item", changing the URI value to https://0-0-0-0-3000-5qvda9t3k70pqq30rph2i4uo8o.us.edusercontent.com/add-message?s=This%20is%20a%20new%20item., the value of message to "This is a new item.", the value of searchList to "1. I have now cleared the list\n2. This is a new item.\n", and incrementing the count changing it to 3. 
 
 ## Part 2 ##
+Screenshot of the path to the private key for my SSH key:  
+![path for private key](privateKey.png)  
+Screenshot of the path to the public key for my SSH key:  
+![path for public key](publicKey.png)  
+Screenshot of login without password:  
+![login using key](noPassword.png)  
