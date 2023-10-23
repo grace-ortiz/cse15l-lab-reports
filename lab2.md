@@ -74,3 +74,6 @@ Screenshot of the path to the public key for my SSH key:
 ![path for public key](publicKey.png)  
 Screenshot of login without password:  
 ![login using key](noPassword.png)  
+
+## Part 3 ##
+Before this week I didn't know about secure shell protocol or how remotely connecting to servers worked. I also thoguht it was interesting learning how to make the SSH key and am now able to login without a password! Using curl instead of git clone is also something new and I think it is nice to know multiple ways to download things from a url. 
