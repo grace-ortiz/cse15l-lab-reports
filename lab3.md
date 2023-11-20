@@ -51,12 +51,12 @@ The fix addresses the issue because before, the method did not save the initial 
 
 ## Part 2 - Researching Commands ##
 4 command line options for **grep**:
-- grep -i. (n.d). Ignore case. Manual page. Retrieved from the terminal.
+- ```grep -i```. (n.d). Ignore case. Manual page. Retrieved from the terminal.
     ```
     [user@sahara ~/docsearch/technical/biomed]$ grep -i phosphatase 1471-2105-3-22.txt 
           Phosphatase in Activated Cells )
     ```
-    - -i ignores the case of matching lines, so even though we are searching for "phosphatase", it matches with the line containing "Phosphatase" as well since we are ignoring the case change of the 'p'.
+    - ```-i``` ignores the case of matching lines, so even though we are searching for "phosphatase", it matches with the line containing "Phosphatase" as well since we are ignoring the case change of the 'p'.
     ```
     [user@sahara ~/docsearch/technical/911report]$ grep -i california chapter-7.txt 
             FIRST ARRIVALS IN CALIFORNIA
@@ -74,8 +74,8 @@ The fix addresses the issue because before, the method did not save the initial 
                 California, and Arizona; and he briefly started at a couple of them before returning
                 an English as a second language program in Oakland, California, which he had
     ```
-    - This example shows how -i works for identifying many lines just how regular grep does. It has a lot of importance for searching for words as words at the start of the sentence are capitalized while some words in the middle of a sentence are not, so searching for a word while ignoring case will output every single instance of that word, which is how the search tool works for most computers. 
-- grep -o. (n.d). Only matching. Manual page. Retrieved from the terminal.
+    - This example shows how ```-i``` works for identifying many lines just how regular grep does. It has a lot of importance for searching for words as words at the start of the sentence are capitalized while some words in the middle of a sentence are not, so searching for a word while ignoring case will output every single instance of that word, which is how the search tool works for most computers. 
+- ```grep -o```. (n.d). Only matching. Manual page. Retrieved from the terminal.
     ```
     [user@sahara ~/docsearch/technical]$ grep -ro biomed
     biomed/1472-6807-1-1.txt:biomed
@@ -98,7 +98,7 @@ The fix addresses the issue because before, the method did not save the initial 
     biomed/1471-2164-3-7.txt:biomed
     biomed/1471-2105-3-16.txt:biomed
     ```
-    - -o prints only the matching part of the line. In this example, we see all the files that have biomed in them, without being flooded by the content on the line containing biomed. 
+    - ```-o``` prints only the matching part of the line. In this example, we see all the files that have biomed in them, without being flooded by the content on the line containing biomed. 
     ```
     [user@sahara ~/docsearch/technical/911report]$ grep -o Mohammed chapter-5.txt 
     Mohammed
@@ -109,8 +109,8 @@ The fix addresses the issue because before, the method did not save the initial 
     Mohammed
     Mohammed
     ```
-    - In this example where we are only searching within a file, it shows only the matching text, not even the line number. This demonstrates that -o is typically more useful in conjunction with other commands, as it does not provide much other information on its own. 
-- grep -v. (n.d). Invert. Manual page. Retrieved from the terminal.
+    - In this example where we are only searching within a file, it shows only the matching text, not even the line number. This demonstrates that ```-o``` is typically more useful in conjunction with other commands, as it does not provide much other information on its own. 
+- ```grep -v```. (n.d). Invert. Manual page. Retrieved from the terminal.
     ```
     [user@sahara ~/docsearch/technical/911report]$ grep -v e preface.txt 
 
@@ -122,7 +122,7 @@ The fix addresses the issue because before, the method did not save the initial 
         
 
     ```
-    - -v outputs the lines that do not match. This example shows that it outputs all the lines that do not contain "e", including lines that are completely empty (like the first 3 blank lines and the last 2), and lines that contain "E" but not "e", because we have not used "grep -iv". 
+    - ```-v``` outputs the lines that do not match. This example shows that it outputs all the lines that do not contain "e", including lines that are completely empty (like the first 3 blank lines and the last 2), and lines that contain "E" but not "e", because we have not used ```grep -iv```. 
    ```
    [user@sahara ~/docsearch/technical/911report]$ grep -v '\.' preface.txt 
 
@@ -169,7 +169,7 @@ The fix addresses the issue because before, the method did not save the initial 
         
     ```
    - In this example, it outputs every line that doesn't have a period. The '.' character is reserved and if it was used alone it would be a stand in for any character and would have an output of a blank line. We must use '\.' to search for the period character itself. 
-- grep -r. (n.d). Recursive. Manual page. Retrieved from the terminal.
+- ```grep -r```. (n.d). Recursive. Manual page. Retrieved from the terminal.
   - recursively searches through all subdirectories
     ```
     [user@sahara ~/docsearch/technical]$ grep -r narrative 911report/
@@ -177,7 +177,7 @@ The fix addresses the issue because before, the method did not save the initial 
     911report/chapter-11.txt:            In composing this narrative, we have tried to remember that we write with the benefit
     911report/chapter-11.txt:            Before concluding our narrative, we offer a reminder, and an explanation, of the one
     ```
-    - -r recurcursively searches through all subdirectories and files and returns matching lines. Int his example, we search through all files in 911report/ to find all matches for the word "narrative", demonstarating its recursive capabilites. 
+    - ```-r``` recurcursively searches through all subdirectories and files and returns matching lines. Int his example, we search through all files in 911report/ to find all matches for the word "narrative", demonstarating its recursive capabilites. 
     ```
     [user@sahara ~/docsearch/technical]$ grep -r narrative
     biomed/1472-6882-3-1.txt:        Several narrative reviews of the literature on the
@@ -191,6 +191,6 @@ The fix addresses the issue because before, the method did not save the initial 
     911report/chapter-11.txt:            In composing this narrative, we have tried to remember that we write with the benefit
     911report/chapter-11.txt:            Before concluding our narrative, we offer a reminder, and an explanation, of the one
     ```
-    - Similar to the previous example, we recursively search for the word narrative, but this time, without specifying a directory. grep -r will recursively search all subdriectoryies and files within the working directory, resulting in far more matches, and demonstrating its capability to traverse multiple directories.
+    - Similar to the previous example, we recursively search for the word narrative, but this time, without specifying a directory. ```grep -r``` will recursively search all subdriectoryies and files within the working directory, resulting in far more matches, and demonstrating its capability to traverse multiple directories.
    
 (All sources cited in APA format in line)
